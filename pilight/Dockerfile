@@ -16,7 +16,7 @@ RUN	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
 
 EXPOSE 5000/tcp 5001/tcp
 
-RUN echo 11 > /sys/class/gpio/export
+#RUN echo 11 > /sys/class/gpio/export
 
 COPY run.sh /run.sh
 COPY pilight-config.json /etc/pilight/config.json
